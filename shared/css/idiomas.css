@@ -1,0 +1,90 @@
+.selectIdiomas {
+  position: absolute;
+  width: 100%;
+  top: 20%;
+  left: 0;
+}
+
+.logoWowIdioma {
+  width: 20%;
+  margin: 10% auto;
+  margin-bottom: 60px;
+}
+
+.disable{
+  opacity: .7 !important;
+  pointer-events: none !important;
+}
+
+.logoWowIdioma>img {
+  width: 100%;
+}
+
+.btnGroup {
+  width: 30%;
+  margin-top: 15%;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+
+.btnGroup img {
+  width: 10%;
+}
+
+.btnX {
+  max-width: 40px;
+  position: absolute;
+  top: -20px;
+  right: -15px;
+  z-index: 2;
+}
+
+
+.btnX>img {
+  width: 100%;
+}
+
+
+@media (max-width: 1367px) {
+  .logoWow {
+    width: 35%;
+    margin-bottom: 60px;
+  }
+
+  .btnGroup {
+    width: 50%;
+    margin-top: 5%;
+  }
+  
+  .btnGroup img {
+    width: 12%;
+  }
+}
+
+@media (max-width: 812px) {
+  .logoWow {
+    width: 30%;
+    margin-bottom: 60px;
+  }
+
+  .btnGroup {
+    width: 45%;
+    margin-top: 5%;
+  }
+  
+  .btnGroup img {
+    width: 12%;
+  }
+  .btnEnter {
+    max-width: 100px;
+    margin-top: 10%;
+  }
+  
+  .btnEnter>p {
+    top: -6px;
+    z-index: 2;
+    font-size: .8em;
+  }
+  
+}

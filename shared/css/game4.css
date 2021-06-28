@@ -1,0 +1,111 @@
+.wrapperGral{
+    background-color: #866EEA;
+    background-image: url(../img/game4/background.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+}
+.wrapperGral .wrapperGame{
+    display: flex;
+    justify-content: center;
+}
+/*Game-4*/
+.container_rack{
+    position: absolute;
+    top: 21.48%;
+    z-index: 1;
+    height: 71.87%; 
+}
+
+.rack{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.rack>img{
+    height: 100%;
+    position: relative;
+}
+
+.row {
+    position: absolute;
+    left: 0%;
+    width: 100%;
+    height: 18.64%;
+    padding: 0 4.7% 0 2.96%;
+    flex-wrap: nowrap;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+.dropZone::before{
+    content: ' ';
+    width: 99%;
+    height: 29.16%;
+    left: 0%;
+    background-image: url(../img/game4/TiraPrecio.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    z-index: 1;
+    bottom: -8.94%;
+}
+#section1{
+    top: 24.09%;
+}
+#section2{
+    top: 48.4%;
+}
+#section3{
+    top: 72.8%;
+}
+
+.dropZone{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0 4.7% 0 2.96%;
+    box-sizing: border-box;
+}
+
+.dragItem {
+    width: calc(100% / 6);
+    height: 100%;
+    margin:8px;
+    cursor: pointer;
+    position: relative;
+}
+.dragItem>div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.dragItem img{
+    width: 100%;
+    object-fit: contain;
+}
+.dragItem.select{
+    z-index: 2;
+    border: solid 2px #FCB527;
+    border-radius: 10px;
+    -webkit-filter: drop-shadow(5px 5px 30px #fff);
+    filter: drop-shadow(5px 5px 30px #fff);
+}
+.pan{
+    max-width: 95px;
+}
+.bimbollos{
+    max-width: 120px;
+}
+.mediasnoches{
+    max-width: 120px;
+
+}

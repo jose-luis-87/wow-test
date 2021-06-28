@@ -1,0 +1,187 @@
+.wrapperGral{
+    background-color: #E61B72;
+    background-image: url(../img/game7/background.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.wrapperGral .wrapperGame{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+/*Game-7*/
+.container_rack{
+    display: flex;
+    width: 90%;
+    height: 66%;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 48px;
+}
+#resultados{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 20%;
+    text-align: center;
+    height: 100%;
+}
+.results{
+    width: 100%;
+    height: 10%;
+    background-color: #3E3382;
+    opacity: .3;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+.results>img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+#resultado1{
+    margin-top: 0px;
+}
+#dropContainer{
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    height: 100%;
+}
+.imgGame, .drops{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 45%;
+}
+.dropzone{
+    position: relative;
+    width:100%;
+    height: 30%;
+    border-radius: 15px;
+    background-color: #fff;
+    opacity: .4;
+    border: solid gray;
+    border-style: dashed;
+}
+.bgDrop{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.correct, .incorrect{
+    position: absolute;
+    top: 8px;
+    right: 8px;
+}
+.fakeDropzone{
+    position: relative;
+    width: 100%;
+    height: 30%;
+    border-radius: 15px;
+    background-color: #6550E2;
+}
+.imgRef{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+#drop1{
+    background-image: url(../img/game7/toast.svg);
+    background-repeat: no-repeat;
+    background-position: 0px 40px;
+}
+#drop3{
+    background-image: url(../img/game7/buns.svg);
+    background-repeat: no-repeat;
+    background-position: 12px 50px;
+}
+#drop5{
+    background-image: url(../img/game7/papas.svg);
+    background-repeat: no-repeat;
+    background-position: 50px 50px;
+}
+#recursos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 20%;
+    text-align: center;
+    height: 100%;
+    background-color: #866EEA;
+    border-radius: 16px;
+    
+}
+.draggable{
+    
+    width: 240px;
+    height: 18%;
+    border-radius: 15px;
+    background-color: #0090D3;
+    -moz-box-shadow: 0px 0px 25px 2px rgba(255,255,255,1);
+    box-shadow: 0px 0px 25px 2px rgb(255 255 255);
+}
+
+.draggable>img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.draggabl.select{
+    
+    opacity: .5;
+}
+
+
+
+.dropCorrect{
+    width: 100%;
+    height: 20%;
+    border-radius: 15px;
+    background-color: #6550E2;
+    margin: 6px;
+    background-repeat: no-repeat;
+    background-position: 0px 40px;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+@media (max-width: 1367px) {
+    .draggable{
+    
+        width: 200px;
+    }
+  }
+@media (max-width: 1024px) {
+    .draggable{
+    
+        width: 160px;
+    }
+  }
+
+
+@media (max-width: 812px) {
+    .container_rack{
+        height: 60%;
+    }
+    .draggable{
+    
+        width: 110px;
+        z-index: 2;
+    }
+  }
+
+@media (max-width: 668px) {
+    .draggable{
+    
+        width: 80px;
+        z-index: 2;
+    }
+  }

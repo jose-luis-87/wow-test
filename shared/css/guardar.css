@@ -1,0 +1,122 @@
+.containerSave {
+  pointer-events: none;
+}
+
+.btnSaveInt {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  max-width: 60px;
+  margin-bottom: 28px;
+  z-index: 20;
+  pointer-events: none;
+}
+
+.btnSaveInt>img {
+  width: 100%;
+  pointer-events: none;
+}
+.optionMenu {
+  height: 100vh;
+  padding: 40px;
+}
+
+
+.containerSave {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  margin-top: 80px;
+  /* justify-content: center; */
+  height: 100vh;
+}
+
+.saveProgress {
+  margin-top: 40px;
+  margin-right: 40px;
+}
+
+.saveProgress>h2 {
+  text-align: right;
+  margin-block-start: 0.3em;
+  margin-block-end: 0.3em;
+}
+
+.saveProgress>p {
+  text-align: right;
+  margin-block-start: 0.5em;
+    margin-block-end: 1em;
+}
+
+.btnsGuardar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.btnProg {
+  width: 200px;
+  margin-left: 28px;
+  position: relative;
+}
+
+.btnProg>img {
+  width: 100%;
+}
+
+.btnProg>p {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  font-size: 1.5em;
+  line-height: 1;
+  font-weight: bolder;
+  margin-block-start: 0.7em;
+  margin-block-end: 0em;
+  top: 0;
+}
+
+@media (max-width: 821px) {
+  .saveProgress {
+    margin-top: 0px;
+  }
+  .saveProgress>h2 {
+    font-size: 1.2em;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+  }
+  .btnProg {
+    width: 100px;
+    margin-left: 14px;
+  }
+  .btnProg>p {
+    width: 100%;
+    font-size: .8em;
+    line-height: .5em;
+    font-weight: bolder;
+    margin-block-start: 0.7em;
+    margin-block-end: 0em;
+    top: 4px;
+  }
+  .optionMenu {
+    padding: 28px;
+  }
+  
+}
+@media (max-width: 667px) {
+  .btnSaveInt {
+    
+    max-width: 32px;
+    
+}
+  .optionMenu {
+    padding: 12px;
+    width: 50%
+  }
+  .saveProgress>h2 {
+    font-size: .8em;
+    margin-block-start: 0.8em;
+    margin-block-end: 0.4em;
+  }
+}

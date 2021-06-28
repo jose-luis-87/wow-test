@@ -1,0 +1,681 @@
+/*Simulación conttainer three js */
+/* .model {
+  background-image: url('../public/assets/bg-poster-3d.jpg');
+  background-position: center;
+  background-size: cover;
+  z-index: 8;
+  width: 100%;
+  height: 100vh;
+  display: block
+} */
+.preloader{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  background-color: #6550E2;
+}
+.containerLoad{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cargando{
+  margin-top: 28px;
+  text-align: center;
+}
+
+#containerModel{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#games{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 40;
+}
+#fade {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  background-color: transparent;
+  pointer-events: none;
+  z-index: 8;
+}
+/* Modal bienvenida */
+.wrapperModales {
+  width: 100%;
+  height: 102vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  opacity: 1;
+}
+
+.overlay {
+  background-color: #6550E2;
+  mix-blend-mode: lighten;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 6;
+}
+
+.wrapperModales>h1 {
+  text-align: center;
+}
+
+.wrapperModales>p {
+  text-align: center;
+}
+
+.logoWowBen {
+  width: 15%;
+  margin-bottom: 40px;
+  display: block;
+  z-index: 6;
+}
+
+.logoWowBen img {
+  width: 100%;
+}
+.marquee{
+  --offset: 100%;
+  --move-initial: calc(-50% + var(--offset));
+  --move-final: calc(-200% + var(--offset));
+  transform: translate3d(var(--move-initial), 0, 0);
+  animation: marquee 10s linear infinite;
+}
+.welcomeModal {
+  position: relative;
+  width: 40%;
+  height: 40%;
+  background-color: #6550E2;
+  border-radius: 16px;
+  padding: 40px;
+  -webkit-box-shadow: 0px 5px 26px 0px #6550E2;
+  box-shadow: 0px 5px 26px 0px #6550E2;
+  z-index: 12;
+  transition: all ease-in-out .4s;
+}
+.welcomeModal>p {
+  margin-top: 2%;
+  text-align: center;
+}
+.welcomeModal>h1 {
+  
+  text-align: center;
+}
+.btnEnter {
+  max-width: 200px;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 8%;
+}
+
+.btnEnter>img {
+  width: 100%;
+  position: absolute;
+}
+
+.btnEnter>p {
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  font-size: 1.2em;
+  font-weight: bolder;
+  margin-top: 8%;
+  text-align: center;
+}
+.wrapperToolTips{
+  width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* UI Model */
+.uiModel {
+  position: absolute;
+  top: 40px;
+  right: 0%;
+  width: auto;
+  height: auto;
+  background-color: transparent;
+  z-index: 10;
+  transition: all ease-in-out 1s;
+  display: block;
+  pointer-events: none;
+}
+.titleCat{
+  text-align: center;
+  margin-bottom: 28px;
+}
+.btnModel1 {
+  max-width: 60px;
+  height: auto;
+  margin-bottom: 28px;
+}
+
+.btnModel1>img {
+  width: 100%;
+}
+
+.btnModel2 {
+  max-width: 60px;
+  height: auto;
+  margin-bottom: 28px;
+}
+
+.btnModel2>img {
+  width: 100%;
+}
+
+.btnModel3 {
+  max-width: 60px;
+  height: auto;
+  margin-bottom: 28px;
+}
+
+.btnModel3>img {
+  width: 100%;
+}
+
+/* UI User */
+.uiUser {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 22%;
+  z-index: 10;
+  opacity: 1;
+  display: block;
+  transition: all ease-in 2s;
+}
+
+.wrapperScore {
+  position: relative;
+}
+
+.cardPoints {
+  position: relative;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+
+.nameUser {
+  width: 50%;
+  overflow: hidden;
+}
+.marquee{
+  --offset: 100%;
+  --move-initial: calc(-50% + var(--offset));
+  --move-final: calc(-200% + var(--offset));
+  transform: translate3d(var(--move-initial), 0, 0);
+  animation: marquee 10s linear infinite;
+}
+
+.nameUser>p {
+  text-align: center;
+  font-weight: bolder;
+}
+
+.points {
+  width: 50%;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.coins {
+  max-width: 28px;
+}
+
+.coins>img {
+  width: 100%;
+}
+
+.score {
+  background-color: #6550E2;
+  height: auto;
+  margin: 8px 24px 8px 24px;
+  padding: 15px 20px 15px 20px;
+  border-radius: 8px;
+}
+
+.score>p {
+  line-height: .5em;
+  font-size: 1em;
+  font-weight: bolder;
+}
+.scoreFinal {
+  background-color: #6550E2;
+  height: auto;
+  margin: 8px 24px 8px 24px;
+  padding: 15px 20px 15px 20px;
+  border-radius: 8px;
+}
+
+.scoreFinal>p {
+  line-height: .5em;
+  font-size: 1em;
+  font-weight: bolder;
+}
+.bgoverlay {
+  width: 100%;
+  height: 100%;
+  background-color: #6550E2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  mix-blend-mode: hard-light;
+  border-radius: 0px 16px 16px 0px;
+  opacity: .6;
+}
+.bgoverlayFinal {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  mix-blend-mode: hard-light;
+  border-radius: 16px 16px 16px 16px;
+  opacity: .9;
+}
+.toolTip {
+  width: 40%;
+  height: 30%;
+  position: relative;
+  display: block;
+  z-index: 12;
+  flex-direction: column;
+  transition: all ease-in-out 2s;
+}
+
+.cardTool {
+  position: relative;
+  background-color: #6550E2;
+  border-radius: 16px;
+  padding: 40px;
+  -webkit-box-shadow: 0px 5px 26px 0px #6550E2;
+  box-shadow: 0px 5px 26px 0px #6550E2;
+  z-index:12;
+}
+.cardTool>p {
+  text-align: center;
+}
+
+.iconNav {
+  max-width: 80px;
+  margin: 0 auto;
+}
+
+.iconNav>img {
+  width: 100%;
+}
+
+.iconPointer {
+  max-width: 80px;
+  position: absolute;
+  top: 3%;
+  left: 50%;
+}
+
+.iconPointer>img {
+  width: 100%;
+}
+
+.iconNav2 {
+  max-width: 80px;
+  margin: 0 auto;
+  display: none;
+}
+
+.iconNav2>img {
+  width: 100%;
+}
+
+.iconPointer2 {
+  max-width: 80px;
+  position: absolute;
+  top: 3%;
+  left: 50%;
+  display: none;
+}
+
+.iconPointer2>img {
+  width: 100%;
+}
+
+.toolTipLat {
+  position: absolute;
+  top: 60px;
+  right: 70px;
+  width: 16%;
+  display: none;
+  z-index: 8;
+}
+
+.containerBullet {
+  position: relative;
+  width: 100%;
+}
+
+.txtTooltip {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  width: 80%;
+  font-size: .8em;
+  text-align: center;
+}
+
+.bullet {
+  max-width: 270px;
+}
+.bullet>p {
+  max-width: 270px;
+  text-align: center;
+  margin-top: 8px;
+}
+
+.bullet>img {
+  width: 100%;
+}
+.btnXWelcome {
+  max-width: 40px;
+  position: absolute;
+  top: -20px;
+  right: -15px;
+  z-index: 2;
+}
+
+
+.btnXWelcome>img {
+  width: 100%;
+}
+.btnXLeft {
+  max-width: 30px;
+  position: absolute;
+  top: -20px;
+  left: -15px;
+  z-index: 2;
+}
+
+.btnXLeft>img {
+  width: 100%;
+}
+.btnXtool {
+  max-width: 40px;
+  position: absolute;
+  top: -20px;
+  right: -15px;
+  z-index: 2;
+}
+
+.btnXtool>img {
+  width: 100%;
+}
+
+.wrapperMenu {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 6;
+  display: none;
+}
+
+#morph {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: -25%;
+  pointer-events: none;
+}
+
+.menuMorph {
+  pointer-events: none;
+}
+
+.arrowBack {
+  position: absolute;
+  left: 55%;
+  top: 6%;
+  z-index: 12;
+  max-width: 60px;
+  display: none;
+  opacity: 0;
+  transition: all ease-in-out 2s;
+}
+
+.arrowBack>img {
+  width: 100%;
+}
+
+.optionMenu {
+  position: absolute;
+  width: 50%;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  padding: 40px;
+  padding-right: 0;
+}
+
+.notification {
+  display: flex;
+  flex-direction: row;
+  padding: 8px;
+  background-color: #9AC906;
+  align-items: center;
+  position: absolute;
+  top: 120px;
+  left: -320px;
+  z-index: 12;
+  border-radius: 0px 16px 16px 0px;
+}
+
+.circle {
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  background-color: #FA9128;
+  filter: blur(1px);
+  margin-right: 16px;
+}
+
+.iconActiveMision {
+  width: 32px;
+  margin-right: 16px;
+  margin-left: 16px;
+}
+
+.iconActiveMision>img {
+  width: 100%;
+}
+
+.notification>p {
+  color: rgba(101, 80, 226, 1);
+  font-weight: bold;
+  margin-right: 16px;
+  font-size: .7em;
+}
+.notificationComplete{
+  display: flex;
+  flex-direction: row;
+  padding: 8px;
+  background-color: #9AC906;
+  align-items: center;
+  position: absolute;
+  top: 40%;
+  right: -380px;
+  border-radius: 16px 0px 0px 16px;
+  z-index: 12;
+}
+.iconComplete{
+  width: 18px;
+  margin-left: 16px;
+}
+.iconComplete>img{
+  width: 100%;
+}
+.txtComplete{
+  margin-left: 16px;
+  margin-right: 16px;
+}
+.txtComplete>p{
+  margin-block-start: .2em;
+  margin-block-end: .2em;
+  color: rgba(101, 80, 226, 1);
+  font-weight: bold;
+}
+.txtComplete>h4{
+  margin-block-start: .2em;
+  margin-block-end: .2em;
+  font-size: .8em;
+}
+
+@media (max-width: 1367px) {
+  .optionMenu {
+    width: 60%;
+  }
+  .arrowBack {
+    left: 45%;
+  }
+  
+}
+@media (max-width: 1024px) {
+  .uiUser {
+    top: 5%;
+    width: 30%;
+    
+}
+#nameUser {
+  line-height: .8em;
+  font-size: .8;
+}
+  
+}
+@media (max-width: 821px) {
+  .toolTipLat {
+    
+    top: 28px;
+  }
+  
+  .btnEnter {
+    max-width: 140px;
+    margin-top: 8%;
+  }
+  .btnEnter>p {
+   
+    font-size: .8em;
+    margin-top: 8%;
+    
+  }
+  .uiUser {
+    top: 4%;
+    width: 27%;
+}
+.coins {
+  max-width: 18px;
+  margin-top: 5px;
+}
+.score {
+  margin: 4px 11px 3px 13px;
+  padding: 10px 9px 8px 10px;
+}
+.score>p {
+  line-height: .5em;
+  font-size: .5;
+}
+.scoreFinal {
+  margin: 4px 11px 3px 13px;
+  padding: 10px 9px 8px 10px;
+}
+.scoreFinal>p {
+  line-height: .5em;
+  font-size: .5;
+}
+.uiModel {
+  top: 4%;
+  width: 6%;
+}
+.btnModel1, .btnModel2, .btnModel3 {
+  margin-bottom: 10px;
+}
+  .welcomeModal {
+    width: 40%;
+    height: 44%;
+    padding: 12px;
+  }
+  .btnXWelcome {
+    max-width: 32px;
+    top: -15px;
+    right: -10px;
+  }
+  .btnXtool {
+    max-width: 32px;
+    top: -15px;
+    right: -10px;
+  }
+  .btnXLeft {
+    max-width: 24px;
+    top: -12px;
+    left: -12px;
+    z-index: 2;
+  }
+  .iconNav, .iconNav2 {
+    max-width: 40px;
+  }
+  .iconPointer, .iconPointer2 {
+    max-width: 40px;
+    top: 3%;
+    left: 50%;
+  }
+  .cardTool {
+    padding: 12px;
+  }
+  .containerBullet>p{
+    font-size: .5em;
+  }
+  .bullet {
+    max-width: 320px;
+  }
+  .toolTipLat {
+    width: 26%;
+    display: none;
+  }
+  .arrowBack {
+    left: 55%;
+    top: 6%;
+    z-index: 12;
+    max-width: 32px;
+    
+  }
+}

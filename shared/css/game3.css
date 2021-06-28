@@ -1,0 +1,146 @@
+.wrapperGral{
+    background-color: #866EEA;
+    background-image: url(../img/game3/background.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container_rack{
+    position: absolute;
+    left: 37.5%;
+    right: 32.97%;
+    top: 8.03%;
+    bottom: 3.13%;
+    z-index: 1;
+}
+.rack{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background-image: url(../img/game3/rack.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;  
+}
+.tiraCommon{
+    width: 88.72%;
+    height: 5.31%;
+    position: absolute;
+    left: 0;
+    right: 11.27%;
+    top: 54.43%;
+    bottom: 40.24%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.tiraGris{
+    background-image: url(../img/game3/tiragris.svg);
+}
+
+.tiraColor{
+    background-image: url(../img/game3/tiracolor.svg);
+    background-position: 100% 100%;
+    background-size: 101% 102%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.tiraColor.win{
+    filter: drop-shadow(0 0 3px #ffffff);
+}
+.tiraGris.win{
+    background-image: none;
+}
+.tiraColor.lose>div{
+    background-image: url(../img/game3/lose.svg);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    width: 120%;
+    height: 140%;
+    margin-left: -10px;
+}
+.sparkles_left{
+    position: absolute;
+    left: -10.98%;
+    top: 45.86%;
+    width: 11.46%;
+    padding-top: 11.46%;
+
+}
+.sparkles_right{
+    position: absolute;
+    left: 88.52%;
+    top: 45.86%;
+    width: 11.46%;
+    padding-top: 11.46%;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+.sparkles_left>div{
+    position: absolute;
+    top: 0;
+    width:100%;
+    height:100%;
+}
+.sparkles_right>div{
+    position: absolute;
+    top: 0;
+    width:100%;
+    height:100%;
+}
+.sparkles{
+    overflow: hidden;
+}
+.sparkles span{
+    position: absolute;
+    background-image: url(../img/game3/star.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation:animation 2s linear infinite;
+    animation-play-state: paused;
+    transition: all .5s linear;
+    left: 100%;
+    top: 100%;
+
+}
+.sparkles.start span{
+    animation-play-state: running;
+    transition: all .5s linear;
+
+}
+.sparkles.start span:nth-child(1){
+    transform: matrix(-0.99, 0.17, 0.17, 0.99, 0, 0);
+    width: 57.81%;
+    height: 57.81%;
+    left: 1.88%;
+    top: 0%;
+}
+.sparkles.start span:nth-child(2){
+    transform: matrix(-0.92, -0.4, -0.4, 0.92, 0, 0);
+    width: 39.85%;
+    height: 39.85%;
+    left: 63%;
+    top: 25%;
+}
+.sparkles.start span:nth-child(3){
+    transform: matrix(-0.97, 0.24, 0.24, 0.97, 0, 0);
+    width: 27.92%;
+    height: 27.92%;
+    left: 42.88%;
+    top: 70%;
+}
+
+
+@keyframes animation {
+    0% {
+        transform:rotate(0deg);
+    }
+
+    100% {
+        transform:rotate(360deg);
+    }
+}

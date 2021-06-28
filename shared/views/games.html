@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0' name='viewport' />
+    <title>Mini Games</title>
+    <link rel="stylesheet" href="./shared/css/games.css">
+</head>
+
+<body>
+    <div class="wrapperGral">
+        <div>
+            <div class="wrapperTimesUp">
+                <div class="TimesUp">
+                    <p class="TextTimesUp">Se ha terminado tu tiempo</p>
+                    <i class="iconTimesUp"></i>
+                    <p class="TextLivesD">Vidas disponibles</p>
+                    <div class="LivesRemaining">
+                        <i></i>
+                        <p></p>
+                    </div>
+                    <div class="btnTimesUp btnYellowCommon">
+                        <p>Intentar de nuevo</p>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapperGameOver">
+                <div class="GameOver">
+                    <p class="TextGameOver">Se han terminado
+                        tus vidas</p>
+                    <i class="iconGameOver"></i>
+                    <div class="btnGameOver btnYellowCommon">
+                        <p>Intentar de nuevo</p>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapperWin">
+                <div class="logoWow">
+                    <img src="./shared/img/ui/wow.svg" alt='wow' />
+                </div>
+                <p>¡Pasaste la misión y ganaste <span class="pntGanados">1 punto</span> y una <span>recompensa</span>!
+                </p>
+                <div class="wrapperbtnPrize">
+                    <div class="btnPrize">
+                        <div class="prize">
+                            <p>PREMIO</p>
+                            <img src="" alt="iconPrice" />
+                        </div>
+                        <img src="./shared/img/ui/btn-prize.svg" alt="buttonPrize">
+                    </div>
+                    <img class="flare" src="./shared/img/ui/flare.svg" alt="flare" />
+                </div>
+                <div class="logoSales win">
+                    <img src="./shared/img/ui/Logo_Escuela_Sales_white.svg" alt='logo-sales' />
+                </div>
+            </div>
+            <div class="wrapperInstructions">
+                <div class="textIns">
+                    <p></p>
+                </div>
+                <div class="imgIns">
+                    <img class="imagenIns" alt="imagen-instruccion" />
+                </div>
+                <div class="wrapperTimeIns">
+                    <p>Tienes <span></span> segundos para ganar el juego</p><i></i>
+                </div>
+                <div class="toca">
+                    <p>Toca para continuar</p><i></i>
+                </div>
+            </div>
+            <div class="wrapperWinFinal">
+                <div class="felicidades">
+                    <h4>Haz concluido el rally con éxito</h4>
+                    <h1>¡Felicidades!</h1>
+                    <div class="puntaje">
+                        <p>Puntaje final</p>
+                        <div class="cardFinalPoints">
+                            <div class="wrapperScore">
+                                <div class="bgoverlayFinal"></div>
+                                <div class="cardPoints">
+                                    <div class="nameUser">
+                                        <p class="nameFinal">Juanito Escarcha</p>
+                                    </div>
+                                    <div class="points">
+                                        <div class="coins">
+                                            <img src="./shared/img/ui/coins.svg" alt="coins">
+                                        </div>
+                                        <div class="scoreFinal">
+                                            <p id="finalPoints">0</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btnFinalizarGame">
+                                <p>Finalizar</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="imgWinners">
+                    <img src="./shared/img/ui/winners.svg" alt="winners">
+                </div>
+                <div class="logoSales win">
+                    <img src="./shared/img/ui/Logo_Escuela_Sales_white.svg" alt='logo-sales' />
+                </div>
+            </div>
+            <div class="userStats">
+                <div class="userName">
+                    <p class="textUserName marquee">Juanito Escarcha Frias</p>
+                </div>
+                <div class="userLives">
+                    <i class="iconLives"></i>
+                    <div>
+                        <p>0</p>
+                    </div>
+                </div>
+                <div class="userPoints">
+                    <i class="iconPoints"></i>
+                    <div>
+                        <p>0</p>
+                    </div>
+                </div>
+            </div>
+            <div class="btn_common btn_info">
+                <img src="./shared/img/ui/btn-info-game.svg" alt='btn-info' />
+            </div>
+            <div class="btn_common btn_save">
+                <img src="./shared/img/ui/btn-guardar.svg" alt='btn-save' />
+            </div>
+            <div class="btn_common btn_score">
+                <img src="./shared/img/ui/btn-score.svg" alt='btn-score' />
+            </div>
+            <div class="wrapperBarTime">
+                <div class="barTime">
+                    <div class="barFill"></div>
+                </div>
+                <i class="iconTime"></i>
+            </div>
+            <div class="wrapperGame">
+
+            </div>
+            <div class="logoSales">
+                <img src="./shared/img/ui/Logo_Escuela_Sales_white.svg" alt='logo-sales' />
+            </div>
+        </div>
+    </div>
+    <script src="./shared/js/jquery-3.5.1.min.js"></script>
+    <script src="./shared/js/jquery-ui.min.js"></script>
+    <script src="./shared/js/jquery.ui.touch-punch.min.js "></script>
+    <script src="./shared/js/jquery-pauseresume.js "></script>
+    <script src="./shared/js/jquery.eraser.js "></script>
+    <script src="./shared/js/games.js"></script>
+</body>
+
+</html>

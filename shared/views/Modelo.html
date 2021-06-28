@@ -1,0 +1,106 @@
+<head>
+  <link rel="stylesheet" href="./shared/css/model.css">
+  <link rel="stylesheet" href="./shared/css/categorias.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+</head>
+<div id="containerModel"></div>
+<div class="wrapperModales">
+  <div class="overlay"></div>
+  <div class="logoWowBen">
+    <img src="./shared/img/ui/logo-wow.svg" alt="logo-wow">
+  </div>
+  <div class="welcomeModal">
+    <h1 id='welcomeTitle'>¡BIENVENIDO!</h1>
+    <P id='welcomeParagraph'>
+      Estás a punto de entrar a un punto de venta sigue las indicaciones para poder ganar
+    </P>
+    <div class="btnXWelcome">
+      <img src="./shared/img/ui/btn-x.svg" alt="x">
+    </div>
+    <div class="btnEnter">
+      <img src="./shared/img/ui/bg-btn-hor-y.svg" alt="enter">
+      <p id='btnEntrar'>Entrar</p>
+    </div>
+  </div>
+  
+</div>
+
+<div class="uiModel">
+  <div class="btnModel1">
+    <img id="btnHelp" src='./shared/img/ui/btn-help.svg' onmouseover="this.src='./shared/img/ui/btn-help-dark.svg'"
+      onmouseout="this.src='./shared/img/ui/btn-help.svg'" alt="help">
+  </div>
+  <div class="btnModel2 animate__delay-1s">
+    <img id="btnSave" src='./shared/img/ui/btn-guardar.svg' onmouseover="this.src='./shared/img/ui/btn-guardar-dark.svg'"
+      onmouseout="this.src='./shared/img/ui/btn-guardar.svg'" alt="guardar">
+  </div>
+  <div class="btnModel3 animate__delay-2s">
+    <img id="btnStats" src='./shared/img/ui/btn-score.svg' onmouseover="this.src='./shared/img/ui/btn-score-dark.svg'"
+      onmouseout="this.src='./shared/img/ui/btn-score.svg'" alt="score">
+  </div>
+</div>
+<div class="uiUser">
+  <div class="wrapperScore">
+    <div class="bgoverlay"></div>
+    <div class="cardPoints">
+      <div class="nameUser">
+        <p id="nameUser" class="marquee">Juanito Escarcha</p>
+      </div>
+      <div class="points">
+        <div class="coins">
+          <img src="./shared/img/ui/coins.svg" alt="coins">
+        </div>
+        <div class="score">
+          <p>0</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="wrapperMenu">
+  <div class="arrowBack">
+    <img src="./shared/img/ui/arrow-back.svg" alt="arrow">
+  </div>
+  <svg class="unactive" id="morph" height="100" width="100" viewBox="0 0 1058 900" preserverAspectRatio="none">
+    <path class="menuMorph" d="M1058,0L1058,0c0,87.8,0,292.1,0,472.3c0,266.8,0,421.3,0,604.7l0,0V0z" fill="#866EEA">
+    </path>
+  </svg>
+  <div class="optionMenu">
+
+  </div>
+</div>
+<div class="notification">
+  <div class="iconActiveMision">
+    <img id='iconNotification' src="./shared/img/ui/piña.svg" alt="iconMision">
+  </div>
+  <p id='txtNotification'>Encuentra la piña</p>
+  <div class="circle animate__animated animate__flash animate__infinite"></div>
+</div>
+<div class="notificationComplete">
+  <div class="iconComplete">
+    <img  src="./shared/img/ui/complete.svg" alt="complete">
+  </div>
+  <div class="iconActiveMision">
+    <img id='iconNotificationComplete' src="./shared/img/ui/piña.svg" alt="iconMision">
+  </div>
+  <div class="txtComplete">
+    <p id='txtNotificationComplete'>Encuentra la piña</p>
+    <!-- <h4 id='txtComplete'>COMPLETADO</h4> -->
+  </div>
+</div>
+<div id="fade"></div>
+<div class="preloader">
+  <div class="containerLoad">
+    <div class="logoWowBen">
+      <img src="./shared/img/ui/logo-wow.svg" alt="logo-wow">
+      <p class="cargando animate__animated animate__flash animate__infinite">Cargando...</p>
+    </div>
+  </div>
+
+</div>
+
+<script src="./shared/js/modelUi.js"></script>
+<script type="module" src="./shared/js/model.js"></script>

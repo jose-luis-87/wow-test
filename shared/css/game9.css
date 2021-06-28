@@ -1,0 +1,338 @@
+.wrapperGral{
+    background-color: #E61B72;
+    background-image: url(../img/game9/background.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    mix-blend-mode: screen;
+}
+.Game{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.wrapperDraggable{
+    position: absolute;
+    background-color: #0090D3;
+    top: 21.01%;
+    left: 74.06%;
+    width: 16.45%;
+    height: 62.12%;
+    border-radius: 15px;
+}
+.wrapperTienda{
+    position: absolute;
+    left: 8.54%;
+    top: 20.74%;
+    width: 58.54%;
+    height: 73.51%;
+    border: solid 3px #FFF;
+    border-radius: 15px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.tienda{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.wrapperIsla{
+    position: absolute;
+    width: 45%;
+    height: 19%;
+    top: 41%;
+    left: 24%;
+}
+.wrapperIsla>img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+}
+.wrapperDropZone{
+    position: absolute;
+    width: 100%;
+    height: 100%; 
+}
+.dropZone{
+    background-color: #F26D12;
+    position: absolute;
+    width: 8%;
+    padding-top: 8%;
+    border: solid .2rem #fff;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+.dropZone.complete{
+    background-color: transparent;
+    border: solid .2rem transparent;
+}
+.dropZone.complete.win{
+    background-color: #ffffff;
+    box-shadow: 1px 1px 10px 5px #fff;
+    border:solid .2rem #FCB527;
+}
+.dropZone.complete.lose{
+    background-color: #ffffff;
+    box-shadow: 1px 1px 10px 5px #fff;
+    border:solid .2rem #E61B1B;
+}
+.dropZone>div{
+    display: none;
+}
+.dropZone.complete>div{
+    display: flex;
+}
+.dropZone>div>img{
+    width: 100%;
+}
+.dropZone1{
+    top: 42%;
+    left: 20%;
+}
+.dropZone2{
+    top: 32%;
+    left: 59.5%;
+}
+.dropZone3{
+    top: 50%;
+    left: 55%;
+    width: 9%;
+}
+
+.dropZone1>div{
+    position: absolute;
+    top: 0;
+    left: 7%;
+    width: 55%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.dropZone2>div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}.dropZone3>div{
+    position: absolute;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.tacheL>img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    position: absolute;
+    top:0;
+    left:0;
+}
+.tacheR>img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    position: absolute;
+    top:0;
+    left:0;
+}
+.dropZone1 .tacheL{
+    position: absolute;
+    width: 40%;
+    padding-top: 40%;
+    top: -40%;
+    left: -15%;
+    height: unset;
+}
+.dropZone1 .tacheR{
+    position: absolute;
+    width: 40%;
+    padding-top: 40%;
+    top: 100%;
+    left: -15%;
+    height: unset;
+}
+
+.dropZone2 .tacheL{
+    position: absolute;
+    width: 40%;
+    padding-top: 40%;
+    top: -20%;
+    left: -40%;
+    height: unset;
+}
+.dropZone2 .tacheR{
+    position: absolute;
+    width: 40%;
+    padding-top: 40%;
+    top: 70%;
+    left: 105%;
+    height: unset;
+}
+.dropZone3 .tacheL{
+    position: absolute;
+    width: 40%;
+    padding-top: 40%;
+    top: 100%;
+    left: -35%;
+    height: unset;
+}
+.dropZone3 .tacheR{
+    position: absolute;
+    width: 40%;
+    padding-top: 40%;
+    top: 100%;
+    left: 95%;
+    height: unset;
+}
+.commondrag{
+    width: 100%;
+    height: 100%;
+    padding: 5%;
+    box-sizing: border-box;
+}
+.commondrag>img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.commondrag.select{
+    opacity: .5;
+}
+.ui-draggable-dragging.highlight img{
+    -webkit-filter: drop-shadow(0px 0px 10px #fff);
+    filter: drop-shadow(0px 0px 10px #fff);
+    transform: scale(.5);
+}
+.ui-droppable-hover{
+    box-shadow: 1px 1px 10px 5px #fff;
+    border: solid .2rem  #fff;
+    background-color: #f26c128f;
+}
+
+.dropZone1 .sparkles_left{
+    position: absolute;
+    left: -50%;
+    top: -25%;
+    width: 50%;
+    padding-top: 50%;
+    height: unset;
+
+}
+.dropZone1 .sparkles_right{
+    position: absolute;
+    left: -50%;
+    top: 85%;
+    width: 50%;
+    padding-top: 50%;
+    height: unset;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+}
+.dropZone2 .sparkles_left{
+    position: absolute;
+    left: -50%;
+    top: -25%;
+    width: 50%;
+    padding-top: 50%;
+    height: unset;
+
+}
+.dropZone2 .sparkles_right{
+    position: absolute;
+    left: 100%;
+    top: -25%;
+    width: 50%;
+    padding-top: 50%;
+    height: unset;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+.dropZone3 .sparkles_left{
+    position: absolute;
+    left: -40%;
+    top: 85%;
+    width: 50%;
+    padding-top: 50%;
+    height: unset;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+
+}
+.dropZone3 .sparkles_right{
+    position: absolute;
+    left: 85%;
+    top: 90%;
+    width: 50%;
+    padding-top: 50%;
+    height: unset;
+    transform: matrix(-1, 0, 0, -1, 0, 0);
+}
+
+.sparkles_left>div{
+    position: absolute;
+    top: 0;
+    width:100%;
+    height:100%;
+}
+.sparkles_right>div{
+    position: absolute;
+    top: 0;
+    width:100%;
+    height:100%;
+}
+.sparkles{
+    overflow: hidden;
+}
+.sparkles span{
+    position: absolute;
+    background-image: url(../img/game9/star.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation:animation 2s linear infinite;
+    animation-play-state: paused;
+    transition: all .5s linear;
+    left: 100%;
+    top: 100%;
+
+}
+.dropZone.win .sparkles span{
+    animation-play-state: running;
+    transition: all .5s linear;
+
+}
+.dropZone.win .sparkles span:nth-child(1){
+    transform: matrix(-0.99, 0.17, 0.17, 0.99, 0, 0);
+    width: 57.81%;
+    height: 57.81%;
+    left: 1.88%;
+    top: 0%;
+}
+.dropZone.win .sparkles span:nth-child(2){
+    transform: matrix(-0.92, -0.4, -0.4, 0.92, 0, 0);
+    width: 39.85%;
+    height: 39.85%;
+    left: 63%;
+    top: 25%;
+}
+.dropZone.win .sparkles span:nth-child(3){
+    transform: matrix(-0.97, 0.24, 0.24, 0.97, 0, 0);
+    width: 27.92%;
+    height: 27.92%;
+    left: 42.88%;
+    top: 70%;
+}
+@keyframes animation {
+    0% {
+        transform:rotate(0deg);
+    }
+
+    100% {
+        transform:rotate(360deg);
+    }
+}

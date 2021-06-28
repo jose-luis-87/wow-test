@@ -1,0 +1,386 @@
+{
+    "es": {
+      "bienvenida": {
+        "titulo": "¡Bienvenido!",
+        "parrafo": "Estás a punto de entrar a un ambiente virtual de un Punto de Venta. Sigue las indicaciones para ganar y consultar los contenidos."
+      },
+      "tooltip": {
+        "nav": {
+          "drag": "Da clic y arrastra para poder observar el interior de la tienda.",
+          "hotspot": "Explora el interior utilizando las flechas."
+        },
+        "lat": {
+          "ayuda": "Este botón permite visualizar el tutorial de ayuda.",
+          "guardar": "Este botón guarda tu progreso durante la sesión.",
+          "misiones": "Este botón muestra el avance de tus logros y misiones."
+        }
+      },
+      "ui": {
+        "categorias": "Categorías",
+        "misiones": "Misiones",
+        "btnenter": "Entrar",
+        "btnsig": "Siguiente",
+        "btncont": "Continuar",
+        "btnfin": "Finalizar",
+        "btnSalir": "Salir",
+        "titulo": "Tu progreso ha sido guardado",
+        "parrafo": "¿Deseas seguir en el Ambiente Virtual?",
+        "objetotxt": "Encuentra el objeto perdido",
+        "nummision": "Misión",
+        "conclusion": "Has concluido el rally con éxito.",
+        "felicidades": "¡Felicidades!",
+        "puntaje": "Puntaje final"
+
+      },
+      "misiones": [{
+          "id": "piña",
+          "frase": "Tengo corona, pero no soy un rey. Y, por cierto, mi color favorito es el amarillo. ¡Encuéntrame!",
+          "bullet": "Encuentra la piña"
+        },
+        {
+          "id": "globo",
+          "frase": "Busca un globo con el logo de Grupo Bimbo.",
+          "bullet": "Encuentra el globo con el logo"
+        },
+        {
+          "id": "banana",
+          "frase": "Las botanas le dieron la bienvenida a un amigo especial. ¿Ya lo encontraste?",
+          "bullet": "Encuentra la banana"
+        },
+        {
+          "id": "refresco",
+          "frase": "Un refresco resultó ser friolento y decidió salirse de los refrigeradores. Búscalo.",
+          "bullet": "Encuentra el refresco perdido"
+        },
+        {
+          "id": "puerta",
+          "frase": "¡Oh, no! Las bebidas ya no estarán frías. Busca el refrigerador con la puerta abierta y ciérrala.",
+          "bullet": "Encuentra la puerta abierta"
+        },
+        {
+          "id": "foco",
+          "frase": "Un foco observó el sol, le gustó su luz, y ahora brilla diferente. Encuéntralo.",
+          "bullet": "Encuentra el foco de color diferente"
+        },
+        {
+          "id": "liquido",
+          "frase": "¡Cuidado! Alguien podría caerse. Será mejor limpiar antes de que eso ocurra.",
+          "bullet": "Encuentra el líquido derramado"
+        },
+        {
+          "id": "manzana",
+          "frase": "Si hay manzanas rojas… ¿también hay manzanas verdes? Encuéntrala",
+          "bullet": "Encuentra la manzana diferente"
+        },
+        {
+          "id": "paraguas",
+          "frase": "Encuentra un artículo perdido antes de que su dueño se moje con la lluvia.",
+          "bullet": "Encuentra el artículo perdido"
+        },
+        {
+          "id": "espacio",
+          "frase": "¡Mira! Un espacio vacío en el mostrador. Aprovéchalo para colocar material de punto de venta.",
+          "bullet": "Encuentra el espacio para colocar MPV"
+        },
+        {
+          "id": "colado",
+          "frase": "Unas donitas se fueron de fiesta a otro exhibidor. ¡Encuéntralas!",
+          "bullet": "Encuentra al colado de la fiesta"
+        }
+
+      ],
+      "categorias": {
+        "pan": "Pan de caja",
+        "muffins": "Muffins y bagels",
+        "botanas": "Botanas y confitería",
+        "galletas": "Galletas y pastelillos",
+        "tortillas": "Tortillas y empacados"
+      }
+    }
+  ,
+  
+    "en": {
+      "bienvenida": {
+        "titulo": "Welcome",
+        "parrafo": "You are about to enter a point of sale, follow the instructions to be able to win"
+      },
+      "tooltip": {
+        "nav": {
+          "drag": "Click and drag to look around",
+          "hotspot": "You can explore the environment, navigating through the arrows"
+        },
+        "lat": {
+          "ayuda": "This button lets us see the help tutorial",
+          "guardar": "Este botón guarda tu progreso durante la sesión",
+          "misiones": "This button saves your progress during the session"
+        }
+      },
+      "ui": {
+        "categorias": "Category",
+        "misiones": "Missions",
+        "btnenter": "Enter",
+        "btnsig": "Next",
+        "btncont": "Continue",
+        "btnfin": "Finalize",
+        "titulo": "Your progress has been saved",
+        "parrafo": "Do you want to continue in WOW Exhibitions?",
+        "objetotxt": "Find the lost object",
+        "nummision": "Mission"
+      },
+      "misiones": [{
+          "id": "piña",
+          "frase": "It has scales but it is not a fish, it has a crown but it is not a king",
+          "bullet": "Find the pineapple"
+        },
+        {
+          "id": "globo",
+          "frase": "Find the only labeled balloon",
+          "bullet": "Find the balloon"
+        },
+        {
+          "id": "banana",
+          "frase": "Find the banana in the crunchiest rack",
+          "bullet": "Find the banana"
+        },
+        {
+          "id": "refresco",
+          "frase": "Find the lost soda",
+          "bullet": "Find the lost soda"
+        },
+        {
+          "id": "puerta",
+          "frase": "The drinks will be defrosted! Find the refrigerator with the door open and close it",
+          "bullet": "Find the open door"
+        },
+        {
+          "id": "foco",
+          "frase": "A spotlight saw the sun, liked its light, and now it shines differently. Find them",
+          "bullet": "Find the different color bulb"
+        },
+        {
+          "id": "liquido",
+          "frase": "Liquid has been spilled, find the area",
+          "bullet": "Find the spilled liquid"
+        },
+        {
+          "id": "manzana",
+          "frase": "One of the Apples is different",
+          "bullet": "Find the apple"
+        },
+        {
+          "id": "paraguas",
+          "frase": "Find a lost item before its owner gets wet in the rain",
+          "bullet": "Find the umbrella"
+        },
+        {
+          "id": "espacio",
+          "frase": "Take advantage of a blank space to place point of sale material",
+          "bullet": "Find the free space"
+        },
+        {
+          "id": "colado",
+          "frase": "Someone snuck into the party, find him",
+          "bullet": "Find the casting of the party"
+        }
+
+      ],
+      "categorias": {
+        "pan": "Box bread",
+        "muffins": "Muffins and bagels",
+        "botanas": "Snacks and confectionery",
+        "galletas": "Cookies and cupcakes",
+        "tortillas": "Tortillas and packed"
+      }
+    }
+  ,
+  
+    "fr": {
+      "bienvenida": {
+        "titulo": "Bienvenue",
+        "parrafo": "Vous êtes sur le point d'entrer dans un point de vente, suivez les instructions pour pouvoir gagner"
+      },
+      "tooltip": {
+        "nav": {
+          "drag": "Cliquez et faites glisser pour regarder autour de vous",
+          "hotspot": "Vous pouvez explorer l'environnement en naviguant à travers les flèches"
+        },
+        "lat": {
+          "ayuda": "Ce bouton nous permet de voir le tutoriel d'aide",
+          "guardar": "Ce bouton enregistre votre progression pendant la session",
+          "misiones": "Ce bouton affiche vos réalisations et missions"
+        }
+      },
+      "ui": {
+        "categorias": "Catégorie",
+        "misiones": "Missions",
+        "btnenter": "Entrer",
+        "btnsig": "Suivant",
+        "btncont": "continuer",
+        "btnfin": "Finaliser",
+        "titulo": "Votre progression a été enregistrée",
+        "parrafo": "Voulez-vous continuer dans les expositions WOW?",
+        "objetotxt": "Retrouver l'objet perdu",
+        "nummision": "Mission"
+      },
+      "misiones": [{
+          "id": "piña",
+          "frase": "Il a des écailles mais ce n'est pas un poisson, il a une couronne mais ce n'est pas un roi",
+          "bullet": "Trouvez l'ananas"
+        },
+        {
+          "id": "globo",
+          "frase": "Trouvez le seul ballon étiqueté",
+          "bullet": "Encuentra el globo"
+        },
+        {
+          "id": "banana",
+          "frase": "Trouvez la banane dans la grille la plus croustillante",
+          "bullet": "Trouvez la banane"
+        },
+        {
+          "id": "refresco",
+          "frase": "Trouvez le soda perdu",
+          "bullet": "Trouvez le soda"
+        },
+        {
+          "id": "puerta",
+          "frase": "Les boissons seront décongelées! Trouvez le réfrigérateur avec la porte ouverte et fermez-le",
+          "bullet": "Trouvez la porte ouverte"
+        },
+        {
+          "id": "foco",
+          "frase": "Un projecteur a vu le soleil, a aimé sa lumière, et maintenant il brille différemment. Les trouver",
+          "bullet": "Trouvez l'ampoule de couleur différente"
+        },
+        {
+          "id": "liquido",
+          "frase": "Du liquide a été renversé, trouve la zone",
+          "bullet": "Trouvez le liquide renversé"
+        },
+        {
+          "id": "manzana",
+          "frase": "L'une des pommes est différente",
+          "bullet": "Trouvez la pomme"
+        },
+        {
+          "id": "paraguas",
+          "frase": "Trouvez un objet perdu avant que son propriétaire ne soit mouillé sous la pluie",
+          "bullet": "Trouvez l'objet perdu"
+        },
+        {
+          "id": "espacio",
+          "frase": "Profitez d'un espace vide pour placer le matériel de point de vente",
+          "bullet": "Trouvez l'espace libre"
+        },
+        {
+          "id": "colado",
+          "frase": "Quelqu'un s'est faufilé dans la fête, trouvez-le",
+          "bullet": "Retrouvez le casting de la fête"
+        }
+
+      ],
+      "categorias": {
+        "pan": "Boîte à pain",
+        "muffins": "Muffins et bagels",
+        "botanas": "Collations et confiseries",
+        "galletas": "Biscuits et cupcakes",
+        "tortillas": "Tortillas et emballé"
+      }
+    }
+  ,
+  
+    "pt": {
+      "bienvenida": {
+        "titulo": "Receber",
+        "parrafo": "Você está prestes a entrar em um ponto de venda, siga as instruções para poder ganhar"
+      },
+      "tooltip": {
+        "nav": {
+          "drag": "Clique e arraste para olhar ao redor",
+          "hotspot": "Você pode explorar o ambiente, navegando pelas setas"
+        },
+        "lat": {
+          "ayuda": "Este botão nos permite ver o tutorial de ajuda",
+          "guardar": "Este botão salva seu progresso durante a sessão",
+          "misiones": "Este botão mostra suas conquistas e missões"
+        }
+      },
+      "ui": {
+        "categorias": "Categoria",
+        "misiones": "Missões",
+        "btnenter": "Entrar",
+        "btnsig": "Próximo",
+        "btncont": "Prosseguir",
+        "btnfin": "Finalizar",
+        "titulo": "Seu progresso foi salvo",
+        "parrafo": "Quer continuar nas exposições WOW?",
+        "objetotxt": "Encontre o objeto perdido",
+        "nummision": "Missão"
+      },
+      "misiones": [{
+          "id": "piña",
+          "frase": "Tem escamas mas não é um peixe, tem uma coroa mas não é um rei",
+          "bullet": "Encontre o abacaxi"
+        },
+        {
+          "id": "globo",
+          "frase": "Encontre o único balão rotulado",
+          "bullet": "Encontre o balão"
+        },
+        {
+          "id": "banana",
+          "frase": "Encontre a banana na prateleira mais crocante",
+          "bullet": "Encontre a banana"
+        },
+        {
+          "id": "refresco",
+          "frase": "Encontre o refrigerante perdido",
+          "bullet": "Encontre o refrigerante"
+        },
+        {
+          "id": "puerta",
+          "frase": "As bebidas serão descongeladas! Encontre a geladeira com a porta aberta e feche-a",
+          "bullet": "Encontre a porta aberta"
+        },
+        {
+          "id": "foco",
+          "frase": "Um holofote viu o sol, gostou de sua luz e agora ele brilha de forma diferente. Encontrá-los",
+          "bullet": "Encontre a lâmpada de cor diferente"
+        },
+        {
+          "id": "liquido",
+          "frase": "Líquido foi derramado, encontre a área",
+          "bullet": "Encontre o líquido derramado"
+        },
+        {
+          "id": "manzana",
+          "frase": "Uma das maçãs é diferente",
+          "bullet": "Encontre a maçã"
+        },
+        {
+          "id": "paraguas",
+          "frase": "Encontre um item perdido antes que seu dono se molhe na chuva",
+          "bullet": "Encontre o item perdido"
+        },
+        {
+          "id": "espacio",
+          "frase": "Aproveite um espaço em branco para colocar o material do ponto de venda",
+          "bullet": "Encontre o espaço livre"
+        },
+        {
+          "id": "colado",
+          "frase": "Alguém entrou sorrateiramente na festa, encontre-o",
+          "bullet": "Encontre o elenco da festa"
+        }
+
+      ],
+      "categorias": {
+        "pan": "Pão de caixa",
+        "muffins": "Muffins e bagels",
+        "botanas": "Lanches e confeitaria",
+        "galletas": "Biscoitos e cupcakes",
+        "tortillas": "Tortillas e embalado"
+      }
+    }
+}
+

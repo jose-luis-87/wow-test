@@ -1,0 +1,212 @@
+.containerStats {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.containerMisiones {
+  width: 100%;
+  height: auto;
+  margin-top: 0px;
+}
+.contentMisiones{
+  position: relative;
+}
+.containerMisiones>h2 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 28px;
+}
+.arrowNext{
+  position: absolute;
+  top: 25%;
+  right: 0;
+  width: 4%;
+}
+.arrowNext>img{
+  width: 100%;
+}
+.arrowPrev{
+  position: absolute;
+  top: 25%;
+  left: 2%;
+  width: 4%;
+}
+.arrowPrev>img{
+  width: 100%;
+}
+.cardMision {
+  position: relative;
+  width: 80px;
+    /* max-width: 80px; */
+  height: 160px;
+  margin-left: 28px;
+  display: inline-block;
+}
+
+.bulletMision {
+  position: relative;
+  width: 100%;
+  white-space: normal;
+}
+
+.bulletMision>img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+}
+
+.mision {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  padding: 8px;
+}
+
+.txtMision>p {
+  font-size: .5em;
+    text-align: center;
+    width: 87%;
+    color: #6550E2;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    /* white-space: nowrap; */
+    overflow: hidden;
+}
+
+.iconMision {
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 12px;
+}
+
+.iconMision>img {
+  width: 80%;
+}
+
+.numberMision {
+  max-width: 80px;
+  position: relative;
+  margin-top: 28px;
+}
+
+.numberMision>p {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  text-align: center;
+  margin-block-start: .2em;
+  margin-block-end: 0em;
+  font-weight: bolder;
+}
+
+.numberFoot {
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.numberFoot>img {
+  width: 100%;
+}
+.btnSaveInt {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  max-width: 60px;
+  margin-bottom: 28px;
+  z-index: 20;
+  pointer-events: none;
+}
+
+.btnSaveInt>img {
+  width: 100%;
+  pointer-events: none;
+}
+/* .optionMenu {
+  height: 100vh;
+  padding: 40px;
+} */
+.hidden {
+	display: none;
+}
+@media (max-width: 821px) {
+  .cardMision {
+    max-width: 48px;
+    height: 120px;
+    margin-left: 12px;
+  }
+  .numberMision {
+    margin-top: 8px;
+  }
+  
+  .numberMision>p {
+    width: 100%;
+    margin-block-start: .4em;
+    margin-block-end: 0em;
+    font-weight: bolder;
+  }
+  .containerMisiones {
+    width: 80%;
+    height: auto;
+    margin-top: 0px;
+    margin-right: -80px;
+  }
+  .containerMisiones>h2 {
+    font-size: .8em;
+    margin-block-start: 1em;
+    margin-block-end: 0.4em;
+}
+  .mision>p {
+    font-size: .3em;
+    text-align: center;
+    width: 100%;
+  }
+  
+}
+@media (max-width: 736px) {
+  
+  .containerMisiones {
+    width: 100%;;
+    margin-right: 0px;
+  }
+  
+  .mision {
+    padding: 4px;
+  }
+  .mision>p {
+    font-size: .01em;
+    width: 100%;
+    text-align: center;
+    white-space: break-spaces;
+  }
+  .containerStats {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 629px) {
+  .btnSaveInt {
+    
+    max-width: 32px;
+}
+ 
+  .iconMision {
+    width: 64%;
+    margin-top: 4px;
+}
+.containerMisiones {
+  width: 100%;
+  margin-right: 0px;
+}
+.cardMision {
+  max-width: 48px;
+  height: 120px;
+  margin-left: 12px;
+}
+}

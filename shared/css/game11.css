@@ -1,0 +1,217 @@
+.wrapperGral{
+    background-color: #6550E2;
+    background-image: url(../img/game11/background.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    mix-blend-mode: screen;
+}
+.Game{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.wrapperDrags{
+    position: absolute;
+    background: #fff;
+    border-radius: 13px;
+    top: 16.66%;
+    left: 83.54%;
+    right: 9.47%;
+    bottom: 21.57%;
+    display: flex;
+    justify-content: center;
+    align-content: space-around;
+    flex-wrap: wrap;
+}
+.commondrag{
+    width: 100%;
+    height: calc(100% / 5);
+    padding: 10%;
+    box-sizing: border-box;
+    z-index: 1;
+}
+.commondrag>img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.commondrag.select{
+    opacity: .5;
+}
+.ui-draggable-dragging.highlight img{
+    -webkit-filter: drop-shadow(0px 0px 10px #fff);
+    filter: drop-shadow(0px 0px 10px #fff);
+}
+.wrapperDrops{
+    position: absolute;
+    top: 19.72%;
+    left: 1.77%;
+    width: 78.48%;
+    height: 60.64%;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+}
+.dropZone{
+    width: 31%;
+    height: 100%;
+    position: relative;
+}
+.dropZone>img{
+    position: absolute;
+    z-index: 1;
+}
+.ui-droppable-hover .base{
+    box-shadow: 1px 1px 10px 5px #fff;
+    border: solid .2rem  #fff;
+}
+.person{
+    display: none;
+}
+.person_soccer{
+    width: 30%;
+    bottom: 10%;
+    left: 19%;
+}
+.person_hallow{
+    width: 27%;
+    bottom: 11%;
+    left: 21%;
+}
+.person_xmas{
+    width: 41%;
+    bottom: 11%;
+    left: 7%;
+}
+.person_beach{
+    width: 39%;
+    bottom: 7%;
+    left: 7%;
+}
+.person_child{
+    width: 53%;
+    bottom: 11%;
+    left: 9%;
+}
+.rack_soccer{
+    width: 50%;
+    bottom: 15%;
+    right: 14%;
+}
+.rack_hallow{
+    width: 57%;
+    bottom: 14%;
+    right: 10%;
+}
+.rack_xmas{
+    width: 48%;
+    bottom: 17%;
+    right: 23%;
+}
+.rack_beach{
+    width: 60%;
+    bottom: 17%;
+    right: 10%;
+}
+.rack_child{
+    width: 35%;
+    bottom: 22%;
+    right: 21%;
+}
+.base{
+    position: absolute;
+    transform: rotate(4deg) translate(-80%, -21%) skew(304deg,25deg);
+    background-color: #ffffff33;
+    padding-top: 36%;
+    width: 40%;
+    bottom: 0;
+    right: 0%;
+    border-radius: 5px;
+    box-sizing: border-box;
+
+}
+
+.base.correct{
+    box-shadow: 1px 1px 10px 5px #fff;
+    border:solid .2rem #FCB527;
+}
+.sparkles_left{
+    position: absolute;
+    left: -7.98%;
+    top: 74.97%;
+    width: 11.46%;
+    padding-top: 11.46%;
+
+}
+.sparkles_right{
+    position: absolute;
+    left: 97.52%;
+    top: 66.97%;
+    width: 11.46%;
+    padding-top: 11.46%;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+.sparkles_left>div{
+    position: absolute;
+    top: 0;
+    width:100%;
+    height:100%;
+}
+.sparkles_right>div{
+    position: absolute;
+    top: 0;
+    width:100%;
+    height:100%;
+}
+.sparkles{
+    overflow: hidden;
+}
+.sparkles span{
+    position: absolute;
+    background-image: url(../img/game11/star.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation:animation 2s linear infinite;
+    animation-play-state: paused;
+    transition: all .5s linear;
+    left: 100%;
+    top: 100%;
+
+}
+.dropZone.win .sparkles span{
+    animation-play-state: running;
+    transition: all .5s linear;
+
+}
+.dropZone.win .sparkles span:nth-child(1){
+    transform: matrix(-0.99, 0.17, 0.17, 0.99, 0, 0);
+    width: 57.81%;
+    height: 57.81%;
+    left: 1.88%;
+    top: 0%;
+}
+.dropZone.win .sparkles span:nth-child(2){
+    transform: matrix(-0.92, -0.4, -0.4, 0.92, 0, 0);
+    width: 39.85%;
+    height: 39.85%;
+    left: 63%;
+    top: 25%;
+}
+.dropZone.win .sparkles span:nth-child(3){
+    transform: matrix(-0.97, 0.24, 0.24, 0.97, 0, 0);
+    width: 27.92%;
+    height: 27.92%;
+    left: 42.88%;
+    top: 70%;
+}
+@keyframes animation {
+    0% {
+        transform:rotate(0deg);
+    }
+
+    100% {
+        transform:rotate(360deg);
+    }
+}

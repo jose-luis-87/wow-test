@@ -1,0 +1,188 @@
+.misionModal {
+  position: relative;
+  z-index: 12;
+  height: 100vh;
+  
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.misionCard {
+  background-color: #6550E2;
+  border-radius: 16px;
+  padding: 28px;
+  height: 50%;
+  z-index: 8;
+  display: none;
+}
+.misionCard>p {
+  margin-top: 5%;
+  text-align: center;
+}
+
+.btnXMision {
+  max-width: 40px;
+  position: absolute;
+  top: -20px;
+  right: -15px;
+  z-index: 2;
+}
+
+
+.btnXMision>img {
+  width: 100%;
+}
+.misionTitle {
+  display: flex;
+  flex-direction: row;
+}
+
+.titleMision {
+  width: 80%;
+  text-align: left;
+}
+
+.iconMisionCard {
+  width: 18%;
+}
+
+.iconMisionCard>img {
+  width: 90%;
+}
+.iconMisionCard>p {
+  text-align: center;
+}
+
+.btnSig {
+  max-width: 200px;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 5%;
+  cursor: pointer;
+}
+
+.btnSig>img {
+  width: 100%;
+  position: absolute;
+}
+
+.btnSig>p {
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  font-size: 1.2em;
+  font-weight: bolder;
+  margin-top: 8%;
+  text-align: center;
+}
+
+.videoModal{
+  background-color: rgb(101, 80, 226);
+  width: 50%;
+  height: 70%;
+  z-index: 12;
+  display: none;
+  flex-wrap: wrap;
+  border-radius: 16px;
+  box-shadow: rgb(101 80 226) 0px 5px 26px 0px;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.wrapperVideo{
+  width: 90%;
+  height: 80%;
+  display: block;
+}
+video {
+  border: 0px solid #f8f6f9;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.pdfModal {
+  background-color: rgb(101, 80, 226);
+  width: 50%;
+  height: 70%;
+  z-index: 12;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.wrapperPdf {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.wrapperPdf #iframe #sidenav-container{
+  display: none !important;
+}
+#sizer {
+  width: 50%;
+}
+
+#content {
+    height: 100%;
+    width: 100%;
+    left: 0;
+    position: sticky;
+    top: 0;
+    z-index: initial;
+}
+
+#toolbar {
+  background-color: rgb(101, 80, 226);
+}
+@media (max-width: 821px) {
+  .misionCard {
+    width: 59%;
+    height: 61%;
+    padding: 12px;
+  }
+  .misionTitle>h1 {
+    width: 75%;
+    font-size: 1.8em;
+    margin-block-start: 0.2em;
+    margin-block-end: 0.2em;
+  }
+  .btnSig {
+    max-width: 120px;
+    margin-top: 10%;
+  }
+  .btnSig>p {
+    font-size: .8em;
+    top: -4px
+  }
+  #misionTxt{
+    font-size: .8em;
+  }
+}
+@media (max-width: 569px) {
+  .misionCard {
+    width: 60%;
+    height: 60%;
+    padding: 12px;
+  }
+  .misionTitle>h1 {
+    width: 75%;
+    font-size: 1.4em;
+    margin-block-start: 0.2em;
+    margin-block-end: 0.2em;
+  }
+  .btnSig {
+    max-width: 100px;
+    margin-top: 10%;
+  }
+  .btnSig>p {
+    font-size: .6em;
+    top: -2px
+  }
+  #misionTxt{
+    font-size: .8em;
+  }
+}

@@ -1,0 +1,189 @@
+.categorias {
+  width: 100%;
+  height: auto;
+  margin-bottom: 40px;
+}
+
+.containercategoria>h2 {
+  text-align: right;
+  margin-bottom: 20px;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+
+.swipperMisiones {
+  width: auto;
+  white-space: nowrap;
+  height: auto;
+  margin: 0;
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+.swipperMisiones::-webkit-scrollbar {
+  display: none;
+}
+.IconContent {
+  width: 40px;
+  height: 40px;
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
+
+.iconComponent {
+  background-color: #6550E2;
+    width: 100%;
+    height: 100%;
+    padding: 4px 0px 2px 0px;
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 5px 26px 0px #6550e2;
+    box-shadow: 0px 5px 26px 0px #6550e2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bgIcon {
+  width: 60%;
+  margin: auto auto;
+}
+
+.bgIcon>img {
+  width: 100%;
+}
+
+.wrapperIconsCat {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 52%;
+  margin-bottom: 12px;
+}
+
+.iconComponent>p {
+  font-size: .5em;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.progressCat {
+  background-color: #D1E1EE;
+  border-radius: 8px;
+  padding: 0;
+  width: 50%;
+  margin-top: 28px;
+  margin: 0 auto;
+}
+
+.progressCat>div {
+  background-color: #9AC906;
+  width: 40%;
+  /* Adjust with JavaScript */
+  height: 8px;
+  border-radius: 8px;
+}
+
+.wrapperCanasta{
+  width: 60%;
+  border-radius: 1px solid white;
+  margin: 0 auto;
+}
+.canasta{
+  /* background-image: url(../public/assets/canasta-bn.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center; */
+  width: 100%;
+  position: relative;
+  background-image: url('./shared/img/ui/canasta-bn.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  padding-top: 38%;
+  margin-bottom: 24px;
+}
+
+
+
+.imgProgress{
+  position:absolute;
+  top: 0;
+  left: 20%;
+  bottom: 0;
+  height: 100%;
+  width: 30%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.imgProgress>img{
+  height: 100%;
+  
+}
+
+
+@media (max-width: 821px) {
+  .categorias {
+    width: 100%;
+    
+    margin-bottom: 5px;
+}
+  .iconComponent {
+    padding: 4px 4px 4px 4px;
+    border-radius: 12px;
+    
+  }
+  .bgIcon {
+    width: 80%;
+  }
+  
+  .iconComponent>p {
+    font-size: .2em;
+    text-align: center;
+    margin:  auto;
+    width: 100%;
+  }
+  .IconContent {
+    height: auto;
+    margin-left: 16px;
+  }
+  .containercategoria>h2{
+    font-size: 1.2em;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+  }
+}
+@media (max-width: 667px) {
+  .containercategoria>h2{
+    font-size: .8em;
+    margin-block-start: 0.4em;
+    margin-block-end: 0.4em;
+  }
+  .categorias {
+    width: 100%;
+    
+    margin-bottom: 5px;
+}
+.canasta {
+  padding-top: 38%;
+  margin-bottom: 9px;
+}
+.iconComponent {
+  padding: 0px 0px 0px 0px;
+  border-radius: 12px;
+}
+  .iconComponent>p {
+    font-size: .25em;
+  }
+  .bgIcon {
+    width: 60%;
+  }
+  .IconContent {
+    height: auto;
+    margin-left: 12px;
+  }
+}

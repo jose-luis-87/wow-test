@@ -1,0 +1,212 @@
+.wrapperGral{
+    background-color: #0090D3;
+    background-image: url(../img/game2/background.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: screen;
+}
+.Game{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.tienda{
+    position: absolute;
+    top: 24.07%;
+    left: 0%;
+    right: 23.28%;
+    bottom: 0%;
+}
+.tienda>img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.customer{
+    position: absolute;
+    top: 51.29%;
+    left: 37.63%;
+    right: 25.63%;
+    bottom: 0%;  
+}
+.customer>img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.globoPromo{
+    position: absolute;
+    left: 17.70%;
+    top: 54.62%;
+    width: 23.67%;
+    height: 31.85%;
+    display: none;
+}
+.globoPromo>img{
+    position: absolute;
+    object-fit: contain;
+    width: 65%;
+    left: 40%;
+}
+.globoPromo>div{
+    position: absolute;
+    width: 64%;
+    height: 84%;
+    display: flex;
+    bottom: 0;
+    left: 0;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #6550E2;
+    border-radius: 1vw;
+}
+.textPromo{
+    position: absolute;
+    font-size: var(--font28);
+    top: 10.51%;
+    text-align: center;
+}
+.textPromo>span{
+    color: #FA9128;
+}
+.btnAceptar{
+    position: absolute;
+    left: 29.77%;
+    right: 29.77%;
+    top: 78.33%;
+    bottom: 7.66%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+}
+.btnAceptar>p{
+   
+    font-size: var(--font24);
+    background: #FCB527;
+    border-radius: 16px;
+    width: 100%;
+    height: 100%;
+    line-height: 1;
+    text-align: center;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.btnAceptar::before{
+    content: '';
+    background: #FCB527;
+    position: absolute;
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+    bottom: 11.10%;
+    border-radius: 16px;
+    z-index: 0;
+}
+.btnAceptar::after{
+    content: '';
+    background: #D1E1EE;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 11.10%;
+    border-radius: 16px;
+    z-index: 0;
+    mix-blend-mode: overlay;
+}
+.wrapperPromos{
+    position: absolute;
+    top: 4.87%;
+    left: 12.28%;
+    right: 46.36%;
+    bottom: 69.63%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.promo{
+    width: 47%;
+}
+.promo.selected{
+    border: solid .5vw #fff;
+    border-radius: 10px;
+}
+.globoCustomer{
+    position: absolute;
+    left: 23.83%;
+    top: 71.55%;
+    width: 24.73%;
+    height: 21.09%;
+    display: none;
+}
+.globoCustomer>img{
+    position: absolute;
+    object-fit: contain;
+    width: 65%;
+    left: 40%;
+    bottom: 0;
+}
+.globoCustomer>div{
+    position: absolute;
+    width: 64%;
+    height: 84%;
+    display: flex;
+    bottom: 0;
+    left: 0;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #6550E2;
+    border-radius: 1vw;
+}
+.textCustomer{
+    position: relative;
+    font-size: var(--font32);
+    text-align: center;
+    color: #6550E2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    margin: 0 7.5%;
+    line-height: 1;
+}
+.textCustomer>span{
+    font-weight: bold;
+    width: 100%;
+}
+.globoCustomer>div img{
+    position: relative;
+    height: 30%;
+}
+.globoCustomer>div.correct{
+    background-color: #9AC906;
+}
+.globoCustomer>div.incorrect{
+    background-color: #FA9128;
+}
+
+@media only screen and (max-width: 768px) {
+    .btnAceptar>p{
+        font-size: var(--font20-7);
+    } 
+    .textPromo{
+        margin: 0 5%;
+        font-size: var(--font20-8);
+    }
+    .textCustomer{
+        font-size: var(--font20);
+    }
+}
